@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html{
+  max-width: 100%;
+  background-size: contain;
+} 
+html,body{
+  overflow-x: hidden;
+}
+/* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+body {
+  background-color: #ffffff;
+  font-family: "Bebas Neue", "Lato", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+  border: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+.logo img {
+  width: 190px;
+}
+.corn{
+ right: 0;
+  z-index: 9999;
+  position: fixed;
+  margin-right: -25vw;
+  width: 38vw;
+}
+
+.cabbage{
+  left: 0;
+   z-index: 10000;
+   position: fixed;
+   margin-left: -25vw;
+   margin-top: 700px;
+   width: 35vw;
+ }
+ .chilli{
+  right: 0;
+   z-index: 9999;
+   position: fixed;
+   margin-right: -5vw;
+   margin-top: 400px;
+   transform: rotate(90deg);
+   width: 20vw;
+  
+ }
+ .broccoli2{
+  right: 0;
+   z-index: 9998;
+   position: fixed;
+   margin-right: -20vw;
+   margin-top: 750px;
+   transform: rotate(320deg);
+   width: 35vw;
+ }
+ .carrot{
+  left: 0;
+   z-index: 9999;
+   position: fixed;
+   margin-left: -25vw;
+   margin-top: 350px;
+   transform: rotate(50deg);
+   width: 45vw;
+ }
+ .pepper1{
+  left: 0;
+  z-index: 9999;
+  position: fixed;
+  margin-left: -20vw;
+  margin-top: 490px;
+  transform: rotate(50deg);
+  width: 30vw;
+ }
+ .broccoli{
+  left: 0;
+  z-index: 9998;
+  position: fixed;
+  margin-left: -20vw;
+  margin-top: -300px;
+  transform: rotate(120deg);
+  width: 30vw;
+ }
+ .pepper2{
+  right: 0;
+   z-index: 9999;
+   position: fixed;
+   margin-right: -25vw;
+   margin-top: 600px;
+   transform: rotate(20deg);
+   width: 35vw;
+ }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000001;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+}
+nav.active {
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
+  background-color: #ffffff;
+}
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  font-family: "Verdana", bold;
+  line-height: 43px;
+  margin: 3px;
+  padding: 5px 22px;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #3d2514;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+}
+nav ul li a:hover {
+  background-color: #049be7;
+  color: #ffffff;
+  box-shadow: 5px 10px 30px rgba(0, 2, 2, 0.336);
+  transition: all ease 0.2s;
+}
+.fb:hover {
+  background-color: #ffffff;
+}
+nav .menu-btn,
+.menu-icon {
+  display: none;
+}
+
+.header-heading {
+  font-family: "Montserrat";
+  width: 900px;
+  position: absolute;
+  left: 25%;
+  top: 55%;
+  text-align: left;
+  transform: translate(-25%, -55%);
+}
+.header-heading span {
+  font-family: "Alfa Slab One";
+  color: #000000;
+  border-bottom: 2px solid #3d2514;
+}
+.header-heading .details {
+  font-size: 23px;
+  color: #181818;
+}
+.header-heading h3 {
+  font-family: "Bebas Neue";
+  font-size: 1.6rem;
+  margin: 0px;
+  letter-spacing: 2px;
+  color: #3d2514;
+}
+.header-heading h1 {
+  font-family: "Alfa Slab One";
+  font-size: 4rem;
+  margin: 0px;
+  letter-spacing: 2px;
+  color: #3d2514;
+}
+.header-btns {
+  display: flex;
+  margin-top: 40px;
+}
+.header-btn {
+  width: 160px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-family: "Lato";
+  background-color: #000000;
+  box-shadow: 5px 10px 30px rgba(0, 2, 2, 0.336);
+  border-radius: 5px;
+  color: #ffffff;
+}
+.header-btn:hover {
+  background-color: transparent;
+  transition: all ease 0.5s;
+  color: #3d2514;
+  border: 2px solid #000000;
+}
+.intro {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+.intro h1 {
+  font-size: 6vw;
+  font-family: "Patrick Hand", cursive;
+}
+.intro p {
+  font-family: "Roboto", sans-serif;
+  font-size:calc(8px + 1.7vw);
+  margin: 0px;
+}
+.ornament {
+  display: block;
+  margin-block-end: auto;
+  margin-block-start: auto;
+  height: 3px;
+  overflow: hidden;
+  color: #000000;
+  background-color: #000000;
+
+}
+
+#catering{
+  display: flex;
+  flex-flow: column;
+align-items: center;
+}
+#catering h1{
+  margin-top: 60px;
+  font-size:calc(20px + 5vw);
+  text-transform: uppercase;
+  text-decoration: solid;
+  background: linear-gradient(to right, #000000, #544F4F, #757575);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#catering p{
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size:calc(9px + 2.5vw);
+  margin-left: 30%;
+  margin-right: 30%;
+}
+#catering a{
+  text-decoration: none;
+  color: #000000;
+}
+#catering button{
+
+  background: none;
+  padding: 20px 50px;
+  width: 500px;
+  font-size: 50px;
+  margin: 6px;
+  background: linear-gradient(to right, #8ccdff, #ffffff);
+}
+#button:hover{
+  -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+}
+#products {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Lato";
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: #ffffff;
+}
+.dumplings p {
+  font-family: "Pacifico", cursive;
+  font-size: 60px;
+}
+.dinner p {
+  font-family: "Patrick Hand", cursive;
+  font-size: 70px;
+}
+.burger p {
+  font-family: "Fredoka One", cursive;
+  font-size: 60px;
+}
+
+#about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+#about p{
+  text-transform: uppercase;
+  text-decoration: solid;
+  background: linear-gradient(to right, #000000, #544F4F, #757575);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#about h1{
+  margin-top: 60px;
+  font-size: 8vw;
+  text-transform: uppercase;
+  text-decoration: solid;
+  background: linear-gradient(to right, #000000, #544F4F, #757575);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 30vw 30vw;
+  grid-column-gap: 100px;
+  grid-row-gap: 100px;
+}
+.box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+  font-family: "Roboto", sans-serif;
+}
+.contact, .address, .open{
+  width: 25%;
+  min-width: 350px
+}
+.contact h1 , .address h1, .open h1{
+  font-size: 60px;
+  text-transform: uppercase;
+  text-decoration: solid;
+  background: linear-gradient(to right, #000000, #544F4F, #000000);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.contact p , .address p, .open p{
+  font-size: 35px;
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+#contact h1{
+  font-size: 35px;
+
+}
+#contact p{
+  font-size: 20px;
+}
+.contact, .address, .open {
+  min-width: 200px
+}
+  .container{
+        display: flex;
+    flex-flow: column;
+align-items: center;
+grid-row-gap: 0
+  }
+  .box{
+    width: 100%;
+    max-width: 700px;
+    font-size: 5vh;
+    margin: 10px;
+  }
+  .fb{
+    width: 40px;
+    padding: 25px
+  }
+  .menu-icon {
+    display: block;
+  }
+  #products p{
+    font-size: 6vh;
+  }
+  #bg{
+    display: none;
+  }
+  nav {
+    justify-content: space-between;
+    height: 65px;
+    padding: 0px 30px;
+  }
+  .logo img {
+    width: 120px;
+  }
+  .header-btns {
+    margin: 0;
+  }
+  .pr-btns {
+    margin: 0;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    background-color: #ffffff;
+
+    width: 100%;
+    padding: 2px;
+    margin: 0px;
+  }
+  .menu li {
+    width: 100%;
+  }
+  nav .menu li a {
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 25px;
+    border: 1px solid rgba(38, 38, 38, 0.03);
+  }
+  nav .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  nav .menu-icon .nav-icon {
+    background-color: #3d2514;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 24px;
+  }
+  nav .menu-icon .nav-icon:before,
+  nav .menu-icon .nav-icon:after {
+    background: rgb(255, 255, 255);
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all ease-out 0.2s;
+    width: 100%;
+  }
+  nav .menu-icon .nav-icon:before {
+    top: 6px;
+    background-color: #3d2514;
+  }
+  nav .menu-icon .nav-icon:after {
+    top: -6px;
+    background-color: #3d2514;
+  }
+  nav .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+  nav .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+    background-color: #3d2514;
+  }
+  nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+    background-color: #3d2514;
+  }
+  nav .menu-btn {
+    display: none;
+  }
+  nav .menu-btn:checked ~ .menu {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo{
+    margin-left: 25px;
+  }
+  #catering button{
+    width: 70%;
+    font-size: 4vh;
+    padding: 20px 30px;
+  }
+  .intro{
+    margin: 20px;
+  }
+}
+@media (max-width: 800px) {
+  #contact h1{
+    font-size: 25px;
+    margin: 0;
+  }
+  #about h1{
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+  #contact p{
+    font-size: 15px;
+    margin: 0;
+  }
+  #catering h1{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+}
