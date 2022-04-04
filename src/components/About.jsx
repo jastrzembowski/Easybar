@@ -1,9 +1,8 @@
 import React from "react";
-import schab from "../easyimages/schab.jpg";
-import schabburger from "../easyimages/schabburger.jpg";
-import pierogi from "../easyimages/pierogi.jpg";
-import sernik from "../easyimages/sernik.jpg";
-
+import schab from "../easyimages/schab.png";
+import schabburger from "../easyimages/schabburger.png";
+import pierogi from "../easyimages/pierogi.png";
+import sernik from "../easyimages/sernik.png";
 export default function About() {
   return (
     <div id="about" data-aos="fade-right" data-aos-duration="1000">
@@ -12,6 +11,7 @@ export default function About() {
         <div className="box" data-aos="fade-right" data-aos-duration="1000">
           <img
             src={schab}
+            alt="schabowy"
             style={{
               width: "100%",
               minWidth: "400px",
@@ -25,6 +25,7 @@ export default function About() {
           {" "}
           <img
             src={schabburger}
+            alt="schabburger"
             style={{
               width: "100%",
               minWidth: "400px",
@@ -39,6 +40,7 @@ export default function About() {
           {" "}
           <img
             src={pierogi}
+            alt="pierogi"
             style={{
               width: "100%",
               minWidth: "400px",
@@ -53,6 +55,7 @@ export default function About() {
           {" "}
           <img
             src={sernik}
+            alt="sernik"
             style={{
               width: "100%",
               minWidth: "400px",

@@ -1,12 +1,24 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import slider1 from "../easyimages/slider1.jpg";
-import slider2 from "../easyimages/slider2.jpg";
-import slider3 from "../easyimages/slider3.jpg";
+import Slider from "react-slick";
+import main4 from "../pageimages/main4.jpg";
+import hero from "../pageimages/hero.jpg";
+import main6 from "../pageimages/main6.jpg";
+
 
 export default function Header() {
-  const images = [slider1, slider2, slider3];
+
+  const settings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    dots: false,
+    arrows: true,
+    autoplayspeed: 500,
+    infinite: true,
+    fade: true,
+
+    height: "655px",
+  };
 
   return (
     <div
@@ -14,35 +26,74 @@ export default function Header() {
       style={{
         display: "flex",
         justifyContent: "center",
-        width: "100",
+     
         marginTop: "65px",
+        height: "655px",
+      
       }}
     >
       <div
         style={{
           display: "flex",
           justifyContent: "center",
-          width: "90%",
-          zIndex: 1000000,
+     
+          zIndex: 2,
+          position: "absolute",
         }}
       >
-        <Carousel
-          autoPlay={true}
-          infiniteLoop={true}
-          showThumbs={false}
-          showStatus={false}
-          interval={4000}
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          width: "100%",
+          zIndex: 2,
+        }}
+      >
+        <Slider
+          {...settings}
+          style={{
+            width: "100vw",
+          }}
         >
-          <div>
-            <img src={slider1} />
+            <div className="event-box">
+            {/* <link rel="preload" as="image" href=`{{$main5}}`  alt="posiłki regeneracyjne"
+              style={{ height: "655px", width: "100%" , objectFit:
+            "cover"}} /> */}
+            <img
+              src={hero}
+              alt="posiłki regeneracyjne"
+              style={{ height: "655px", width: "100%" , objectFit:
+            "cover"}}
+            />
+            <div className="main-border">
+            <p className="main-text">Skontaktuj się z nami! <br/> 575-535-645</p>
+             
+            </div>
           </div>
-          <div>
-            <img src={slider2} />
+          <div className="event-box">
+            <img
+              src={main4}
+              alt="dla pracowników"
+              style={{ height: "655px", width: "100%",objectFit:
+              "cover" }}
+            />
+            <div className="main-border">
+              <p className="main-text">Zadbaj o siebie <br/>i swoich pracowników</p>
+            </div>
           </div>
-          <div>
-            <img src={slider3} />
+          <div className="event-box">
+            <img
+              src={main6}
+              alt="dla firm"
+              style={{ height: "655px", width: "100%",objectFit:
+              "cover" , objectPosition: "right"}}
+            />
+            <div className="main-border">
+            <p className="main-text">Dobrze zbilansowane<br/> cateringi obiadowe</p>
+            </div>
           </div>
-        </Carousel>
+        </Slider>
       </div>
     </div>
   );
